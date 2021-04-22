@@ -1,0 +1,75 @@
+.main{
+  width: 100%;
+  min-width:  1100px;
+  box-sizing: border-box;
+  padding: 0 10vh;
+}
+
+.top-content{
+  height: 150px;
+  padding-top: 230px;
+  background-image: url("https://www.tsuyukigroup.life/_src/7398/photo1_2.png");
+  background-position: center;
+  border: red solid 1px;
+  object-fit: cover;
+}
+
+.group-title{
+  border: solid red 1px;
+  text-align: center;
+  font-size: 40px;
+  color: #C80850;
+  text-shadow: 3px 3px 3px white;
+}
+
+.title h3{
+  text-align: center;
+  background-color: lightgreen;
+}
+
+.group-philosophy h3{
+  text-align: center;
+  background-color: lightcoral;
+}
+
+.company-lists{
+  border: red solid 1px;
+  display: flex ;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.company-list{
+  border: aqua solid 1px;
+  width: 300px;
+  margin: 5px;
+}
+
+.company-text{
+  background-color: lightpink;
+}
+
+.company-name{
+  background-color: lightskyblue;
+}
+
+.company-info{
+  background-color: limegreen;
+}
+
+.history-lists{
+  border: solid red 1px;
+}
+
+.history-list{
+  display: flex;
+  border: solid blue 1px;
+  justify-content: space-between;
+}
+
+.date{
+  border: red solid 1px;
+}
+
+.text{
+  border: lightseagreen solid 1px;
+}
