@@ -1,0 +1,28 @@
+.page-title{
+  font-size: 50px;
+  text-align: center;
+  border-bottom: crimson solid 3px;
+  margin: 10px 150px;
+}
+.form{
+  margin: 0 auto;
+  border: solid red 1px;
+  width: 40vw;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group{
+  border: solid blue 1px;
+  width: 40vw;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-btn{
+  text-align: center;
+}
