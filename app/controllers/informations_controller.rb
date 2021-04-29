@@ -19,7 +19,7 @@ class InformationsController < ApplicationController
 private
 
   def information_params
-    params.permit(:name, :name_spell, :birthdate, :email, :motivation)
+    params.require(:information).permit(:name, :name_spell, :birthdate, :email, :motivation)
   end
 
 end
