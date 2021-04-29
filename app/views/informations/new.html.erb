@@ -87,7 +87,7 @@
       <h3>エントリーフォーム</h3>
     </div>
     <div class='form'>
-      <%= form_with model: @information, url: informations_path, class: 'entry-form', local: true do |f| %>
+      <%= form_with model: @information, url: informations_path, class: 'entry-form' do |f| %>
       <% if @information.errors.any? %>
       <% end %>
         <div class="form-group">
@@ -115,6 +115,7 @@
           <div class='date_select'><%= raw sprintf(
                       f.date_select(
                         :birthdate,
+                        selected: Time.now.year,
                         class:'date_select',
                         use_month_numbers: true,
                         prompt:'--',
