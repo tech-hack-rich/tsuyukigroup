@@ -21,8 +21,34 @@
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
+
 }
 
 .submit-btn{
   text-align: center;
+}
+
+.date-select {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 8px;
+  justify-content: center;
+}
+
+.date-select select {
+  width: 6vw;
+  margin-top: 5px;
+  height: 45px;
+  padding-left: 10px;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  background: rgb(230, 242, 248);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.date-select p {
+  line-height: 50px;
+  padding: 0 5px;
+  font-size: 15px;
 }

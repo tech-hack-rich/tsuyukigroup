@@ -1,0 +1,7 @@
+<% if model.errors.any? %>
+  <div class="error-alert">
+    <%= model.errors.full_messages do |message| %>
+      <%= message %>
+    <% end %>
+  </div>
+<% end %>
