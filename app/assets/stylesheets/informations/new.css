@@ -21,7 +21,10 @@
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
+}
 
+.form-text{
+  border: red solid 1px;
 }
 
 .submit-btn{

@@ -91,7 +91,7 @@
       <% if @information.errors.any? %>
       <% end %>
         <div class="form-group">
-          <div><%= f.label :name, 'お名前' %></div>
+          <div class='form-text'><%= f.label :name, 'お名前' %></div>
           <div><%= f.text_field :name, class: 'form-control' %></div>
         </div>
         <div>
@@ -101,7 +101,7 @@
         </div>
 
         <div class="form-group">
-          <div><%= f.label :name_spell, 'フリガナ' %></div>
+          <div class='form-text'><%= f.label :name_spell, 'フリガナ' %></div>
           <div><%= f.text_field :name_spell, class: 'form-control' %></div>
         </div>
         <div>
@@ -111,7 +111,7 @@
         </div>
 
         <div class="form-group">
-          <div><%= f.label :birthdate, '生年月日' %></div>
+          <div class='form-text'><%= f.label :birthdate, '生年月日' %></div>
           <div class='date_select'><%= raw sprintf(
                       f.date_select(
                         :birthdate,
@@ -130,7 +130,7 @@
         </div>
 
         <div class="form-group">
-          <div><%= f.label :email, 'メールアドレス' %></div>
+          <div class='form-text'><%= f.label :email, 'メールアドレス' %></div>
           <div><%= f.text_field :email, class: 'form-control' %></div>
         </div>
         <div>
@@ -140,7 +140,7 @@
         </div>
 
         <div class="form-group">
-          <div><%= f.label :motivation, '志望動機など' %></div>
+          <div class='form-text'><%= f.label :motivation, '志望動機など' %></div>
           <div><%= f.text_area :motivation,  class: 'form-control' %></div>
         </div>
         <div>
