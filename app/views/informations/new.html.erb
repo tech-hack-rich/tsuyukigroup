@@ -87,14 +87,15 @@
       <h3>エントリーフォーム</h3>
     </div>
     <div class='form'>
+      <h1>＊項目は全て入力必須項目です</h1>
       <%= form_with model: @information, url: informations_path, class: 'entry-form' do |f| %>
       <% if @information.errors.any? %>
       <% end %>
         <div class="form-group">
           <div class='form-text'><%= f.label :name, 'お名前' %></div>
-          <div><%= f.text_field :name, class: 'form-control' %></div>
+          <div class='form-box'><%= f.text_field :name, class: 'form-control', placeholder:"例) 鈴木　太郎" %></div>
         </div>
-        <div>
+        <div class='error-alert'>
           <% if @information.errors.include?(:name) %>
             <p style="color: red;"><%= @information.errors.full_messages_for(:name).first %>
           <% end %>
@@ -102,29 +103,23 @@
 
         <div class="form-group">
           <div class='form-text'><%= f.label :name_spell, 'フリガナ' %></div>
-          <div><%= f.text_field :name_spell, class: 'form-control' %></div>
+          <div class='form-box'><%= f.text_field :name_spell, class: 'form-control', placeholder:"例) スズキ　タロウ" %></div>
         </div>
-        <div>
+        <div class='error-alert'>
           <% if @information.errors.include?(:name_spell) %>
             <p style="color: red;"><%= @information.errors.full_messages_for(:name_spell).first %>
           <% end %>
         </div>
 
         <div class="form-group">
-          <div class='form-text'><%= f.label :birthdate, '生年月日' %></div>
-          <div class='date_select'><%= raw sprintf(
-                      f.date_select(
-                        :birthdate,
-                        selected: Time.now.year,
-                        class:'date_select',
-                        use_month_numbers: true,
-                        prompt:'--',
-                        start_year: (Time.now.year)-75,
-                        end_year: (Time.now.year),
-                        date_separator: '%s'),
-                      "<p> 年 </p>", "<p> 月 </p>") + "<p> 日 </p>" %></div>
+          <div class='form-text'>
+            <%= f.label :birthdate, '生年月日' %>
+          </div>
+          <div class='form-box'>
+            <%= raw sprintf(f.date_select(:birthdate, class:'date-select', use_month_numbers: true, prompt:'--', start_year: (Time.now.year), end_year: (Time.now.year)-75, date_separator: '%s'),"<p> 年 </p>", "<p> 月 </p>") + "<p> 日 </p>" %>
+          </div>
         </div>
-        <div>
+        <div class='error-alert'>
           <% if @information.errors.include?(:birthdate) %>
             <p style="color: red;"><%= @information.errors.full_messages_for(:birthdate).first %>
           <% end %>
@@ -132,9 +127,9 @@
 
         <div class="form-group">
           <div class='form-text'><%= f.label :email, 'メールアドレス' %></div>
-          <div><%= f.text_field :email, class: 'form-control' %></div>
+          <div class='form-box'><%= f.text_field :email, class: 'form-control', placeholder:"例) example@exa.com" %></div>
         </div>
-        <div>
+        <div class='error-alert'>
           <% if @information.errors.include?(:email) %>
             <p style="color: red;"><%= @information.errors.full_messages_for(:email).first %>
           <% end %>
@@ -142,17 +137,17 @@
 
         <div class="form-group">
           <div class='form-text'><%= f.label :motivation, '志望動機など' %></div>
-          <div><%= f.text_area :motivation,  class: 'form-control' %></div>
+          <div class='form-box'><%= f.text_area :motivation,  class: 'form-control' %></div>
         </div>
-        <div>
+        <div class='error-alert'>
           <% if @information.errors.include?(:motivation) %>
             <p style="color: red;"><%= @information.errors.full_messages_for(:motivation).first %>
           <% end %>
         </div>
 
-        <div class="submit-btn">
-          <h1>お客様からいただく情報は、TSUYUKI Groupのプライバシーポリシーにのっとり、適切に取り扱います。</h1>
-          <%= f.submit '送信' %>
+        <div class="form-bottom-content">
+          <h1 class='privacy-policy'>お客様からいただく情報は、TSUYUKI Groupのプライバシーポリシーにのっとり、適切に取り扱います。</h1>
+          <%= f.submit '送信', class: 'submit-btn' %>
         </div>
       <% end %>
     </div>
