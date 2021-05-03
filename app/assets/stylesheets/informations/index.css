@@ -10,7 +10,6 @@
   padding-top: 230px;
   background-image: url("https://www.tsuyukigroup.life/_src/7398/photo1_2.png");
   background-position: center;
-  border: red solid 1px;
   object-fit: cover;
 }
 
@@ -21,6 +20,7 @@
   text-shadow: 3px 3px 3px white;
 }
 
+/* 見出し */
 .title{
   margin: 20px 230px;
   display: flex;
@@ -42,38 +42,146 @@
 
 .small-title h2{
   font-weight: bolder;
-
 }
 
-.group-philosophy h3{
-  text-align: center;
-  background-color: lightcoral;
+/* 見出し */
+
+.group-philosophy h1{
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.philosophy-1{
+  margin-left: 50px;
+  border-bottom: turquoise solid 4px;
+}
+
+.philosophy-2{
+  margin-left: 250px;
+  border-bottom: turquoise solid 4px;
+}
+
+.philosophy-3{
+  margin-left: 450px;
+  border-bottom: turquoise solid 4px;
+}
+
+.philosophy-4{
+  margin-left: 700px;
+  border-bottom: turquoise solid 4px;
+}
+
+
+
+/* グループ情報リスト */
+.group-info{
+  background-image: url(https://www.tsuyukigroup.life/_src/7334/logo1.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .company-lists{
-  border: red solid 1px;
   display: flex ;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
 }
 
 .company-list{
-  border: aqua solid 1px;
-  width: 300px;
-  margin: 5px;
+  border: lightcoral solid 3px;
+  width: 350px;
+  margin: 10px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255, 80%);
 }
 
-.company-text{
-  background-color: lightpink;
-}
-
-.company-name{
-  background-color: lightskyblue;
+.list-title{
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 17px;
 }
 
 .company-info{
-  background-color: limegreen;
+  padding: 5px;
+  text-align: left;
 }
+
+.company-name-1 h1 {
+  font-size: 28px;
+  background-image: radial-gradient(circle at 47.57% 22.19%, #ff7177 0, #ff5f76 16.67%, #ff4672 33.33%, #f01c6b 50%, #dd0065 66.67%, #cd0064 83.33%, #bf0066 100%);
+  padding: 10px 0;
+}
+
+.company-name-2 h1 {
+  font-size: 25px;
+  background-image: radial-gradient(circle at 44.16% 16.87%, #ff7bab 0, #ff6caa 16.67%, #fe5aa5 33.33%, #ea429f 50%, #d52799 66.67%, #c20896 83.33%, #b00097 100%);
+  padding: 10px 0;
+}
+
+.company-name-3 h1 {
+  font-size: 20px;
+  background-image: radial-gradient(circle at 24.79% 28.84%, #7b8bfc 0, #486ee5 50%, #0053ce 100%);
+  padding: 10px 0;
+}
+
+.company-name-3 h1 span{
+  font-size: 28px;
+}
+
+
+.company-name-4 h1 {
+  font-size: 20px;
+  background-image: radial-gradient(circle at 43.61% 13.74%, #ecffff 0, #d3ffff 16.67%, #b4ffff 33.33%, #8eedf6 50%, #64d7e6 66.67%, #36c4da 83.33%, #00b5d1 100%);
+  padding: 10px 0;
+}
+
+.company-name-4 h1 span{
+  font-size: 28px;
+}
+
+
+.company-name-5 h1 {
+  font-size: 20px;
+  background-image: radial-gradient(circle at 36.91% 14.03%, #d6ff1d 0, #b2ff21 16.67%, #84ff20 33.33%, #3df31d 50%, #00e421 66.67%, #00d830 83.33%, #00d042 100%);
+  padding: 10px 0;
+}
+
+.company-name-5 h1 span{
+  font-size: 28px;
+}
+
+.company-name-6 h1 {
+  font-size: 20px;
+  background-image: radial-gradient(circle at 50% 43.06%, #ffff53 0, #faf81d 50%, #d5df00 100%);
+  padding: 10px 0;
+}
+
+.company-name-6 h1 span{
+  font-size: 28px;
+}
+
+.company-name-7 h1 {
+  font-size: 20px;
+  background-image: radial-gradient(circle at 24.79% 28.84%, #ffcb58 0, #ffbb48 25%, #f7a835 50%, #ee9522 75%, #e68410 100%);
+  padding: 10px 0;
+}
+
+.company-name-7 h1 span{
+  font-size: 28px;
+}
+
+.company-name-8 h1 {
+  font-size: 20px;
+  background-image: radial-gradient(circle at 24.79% 28.84%, #ff7840 0, #ff653b 25%, #f74c35 50%, #ec2e30 75%, #e3002f 100%);
+  padding: 10px 0;
+}
+
+.company-name-8 h1 span{
+  font-size: 28px;
+}
+
+/* グループ情報リスト */
 
 .history-lists{
   border: solid red 1px;
