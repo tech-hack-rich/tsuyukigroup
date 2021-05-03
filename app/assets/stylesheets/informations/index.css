@@ -72,7 +72,6 @@
 }
 
 
-
 /* グループ情報リスト */
 .group-info{
   background-image: url(https://www.tsuyukigroup.life/_src/7334/logo1.png);
@@ -180,26 +179,30 @@
 .company-name-8 h1 span{
   font-size: 28px;
 }
-
 /* グループ情報リスト */
 
+
+/* グループの歴史 */
+.group-history{
+  margin: 0 auto;
+  width: 65%;
+}
+
 .history-lists{
-  border: solid red 1px;
 }
 
 .history-list{
+  border-bottom: solid gray 1px;
   display: flex;
-  border: solid blue 1px;
-  justify-content: space-between;
+  margin: 15px 0;
 }
 
 .date{
-  border: red solid 1px;
+  width: 175px;
 }
 
-.text{
-  border: lightseagreen solid 1px;
-}
+/* グループの歴史 */
+
 
 .youtube{
   width: 80%;
