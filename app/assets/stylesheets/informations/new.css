@@ -4,6 +4,81 @@
   border-bottom: crimson solid 3px;
   margin: 0 150px 10px;
 }
+
+.job-lists{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.job-list{
+  width: 260px;/* 紙の横幅 100%にすると全幅表示に */
+  padding: 15px;
+  margin: 2em auto;
+  background: #f7f092;/* 紙の色 */
+  color: #000;/* 文字色 */
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.03);transform:rotate(2deg);
+  word-break: break-all;
+}
+
+.job-list-tape{
+  width: 50%;
+  height: 35px;
+  margin: -25px auto 0;
+  background: pink;
+  transform: rotate(-3deg);
+  opacity: 0.6;
+}
+
+.job-title{
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.triangle01{ 
+  margin: auto;
+  margin-left: 13px;
+  width: 0;
+  height: 0;
+  border-top: solid 15px transparent;
+  border-right: solid 15px transparent;
+  border-bottom: solid 15px transparent;
+  border-left: solid 15px #697b91;
+}
+
+.flow-lists{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 60px;
+}
+
+.flow-list{
+  border: gray 1px solid;
+  border-radius: 30px;
+  width: 250px;
+  height: 170px;
+  margin: 10px;
+  background-image: radial-gradient(circle at 50% 120.71%, #ffb200 0, #ffbd00 5.56%, #ffc700 11.11%, #f7d100 16.67%, #dfd900 22.22%, #c6e000 27.78%, #aae600 33.33%, #8beb00 38.89%, #65ef1e 44.44%, #1df343 50%, #00f660 55.56%, #00f87b 61.11%, #00fa97 66.67%, #00fcb2 72.22%, #00fdcd 77.78%, #00fee8 83.33%, #00feff 88.89%, #00feff 94.44%, #00fdff 100%);
+}
+
+.flow-step{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.flow-title{
+  color: white;
+  font-size: 25px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.flow-info{
+  padding: 10px;
+}
+
 .form{
   margin: 0 auto;
   width: 570px;

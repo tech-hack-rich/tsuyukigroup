@@ -3,6 +3,7 @@
   min-width:  1100px;
   box-sizing: border-box;
   padding: 0 10vw;
+  background-image: url(https://free-paper-texture.com/p/p0476/p0476_m.jpg);
 }
 
 .group-photo{
@@ -49,6 +50,7 @@
 .group-philosophy h1{
   font-size: 30px;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .philosophy-1{
@@ -74,6 +76,7 @@
 
 /* グループ情報リスト */
 .group-info{
+  padding: 40px 0;
   background-image: url(https://www.tsuyukigroup.life/_src/7334/logo1.png);
   background-position: center;
   background-size: cover;
@@ -90,7 +93,6 @@
   border: lightcoral solid 3px;
   width: 350px;
   margin: 10px;
-  flex-wrap: wrap;
   border-radius: 10px;
   background-color: rgb(255, 255, 255, 80%);
 }
@@ -186,9 +188,6 @@
 .group-history{
   margin: 0 auto;
   width: 65%;
-}
-
-.history-lists{
 }
 
 .history-list{
