@@ -75,12 +75,7 @@
 
 
 /* グループ情報リスト */
-.group-info{
-  padding: 40px 0;
-  background-image: url(https://www.tsuyukigroup.life/_src/7334/logo1.png);
-  background-position: center;
-  background-size: cover;
-}
+
 
 .company-lists{
   display: flex ;
@@ -204,7 +199,7 @@
 
 
 .youtube{
-  width: 80%;
+  width: 750px;
   height: 400px;
   background-color: lightsalmon;
   margin: 0 auto;
